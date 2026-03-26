@@ -123,9 +123,9 @@ WHERE title = 'The Royal Tenenbaum;
 SELECT production_company_name, AVG(popularity) AS avg_popularity
 FROM movies
 JOIN productioncompanymap
-ON movies.movie_id = productioncompanymap.movie_id
+ON movies.movie_id=productioncompanymap.movie_id
 JOIN productioncompanies
-ON productioncompanies.production_company_id = productioncompanymap.production_company_id
+ON productioncompanies.production_company_id=productioncompanymap.production_company_id
 GROUP BY production_company_name
 ORDER BY avg_popularity DESC
 LIMIT 3;
