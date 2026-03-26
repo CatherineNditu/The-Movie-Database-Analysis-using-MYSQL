@@ -1,4 +1,4 @@
-# 🎬 Movie Database Analysis using MySQL (ALX Project)
+ 🎬 The Movie Database Analysis using MySQL (ALX Project)
 
 ## 📌 Project Overview
 This project focuses on analyzing a movie database using **MySQL**. The dataset contains information on movies, actors, genres, production companies, languages, and Oscar awards.
@@ -68,8 +68,19 @@ I used SQL to answer real-world analytical questions, including:
 - How many unique roles has a specific actor played?  
 
 ---
+## Entity-Relationship Diagram
+
+Here is the ERD for The Movie DataBase (TMBD):
+
+![The Movie DataBase ERD](![<img width="890" height="531" alt="image" src="https://github.com/user-attachments/assets/a42e76a2-eee7-4031-90fa-1d70d2e047b4" />#])
 
 ## 💻 Sample Query
+
+# Movie Database SQL Queries
+
+This repository contains SQL queries for analyzing the movie datasets.
+
+---
 
 ```sql
 SELECT * FROM oscars
@@ -80,8 +91,8 @@ WHERE
 
 SELECT * 
 FROM movies 
-WHERE release_date 
-IS NOT NULL ORDER BY release;
+WHERE release_date IS NOT NULL 
+ORDER BY release;
 
 SELECT COUNT(DISTINCT award)
 FROM oscars;
